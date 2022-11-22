@@ -1,4 +1,4 @@
-package Building;
+package building;
 
 public class Office extends Building {
 
@@ -38,6 +38,8 @@ public class Office extends Building {
     //public void setNumberOfEmployees(){
     //    this.numberOfEmployees = numberOfEmployees;
     //}
+
+
 
 
 

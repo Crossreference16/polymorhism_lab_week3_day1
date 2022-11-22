@@ -1,4 +1,4 @@
-package Building;
+package building;
 
 public class School extends Building {
     protected String typeOfSchool;
@@ -13,6 +13,15 @@ public class School extends Building {
 
 
     }
+
+    public String announcement(int numberOfPupils) {
+        return "This is the morning announcement. School has been cancelled tomorrow for all " + numberOfPupils + " students.";
+    } //Method overload part-1.
+
+
+    public String announcement(String lesson3, String lesson4) {
+        return "This is the lunchtime announcement. " + lesson3 + " and " + lesson4 + " today have also been cancelled for Class 10A.";
+    }  //Method overload part-2.
 
 
     //Getters and Setters:
@@ -39,6 +48,7 @@ public class School extends Building {
     //public void setHasSixthForm(Boolean hasSixthForm) {
     //    this.hasSixthForm = hasSixthForm;
     //}
+
 
 
 

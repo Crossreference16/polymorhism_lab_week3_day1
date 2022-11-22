@@ -1,4 +1,4 @@
-package Building;
+package building;
 
 public class Bungalow extends Building {
     protected boolean petsAllowed;
@@ -37,5 +37,8 @@ public class Bungalow extends Building {
     //public void setHasGarage (){
     //    this.hasGarage = hasGarage;
     //}
+
+
+
 
 }

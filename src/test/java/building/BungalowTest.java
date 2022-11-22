@@ -1,7 +1,9 @@
-package Building;
+package building;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BungalowTest {
 
@@ -17,18 +19,24 @@ public class BungalowTest {
     public void canAllowPets(){
         boolean expected = false;
         boolean actual = bungalow.petsAllowed;
+        assertEquals(actual, expected);
+
     }
 
     @Test
     public void totalOccupants(){
        int expected = 4;
        int actual = bungalow.occupants;
+        assertEquals(actual, expected);
+
     }
 
     @Test
     public void garageAtProperty(){
         boolean expected = true;
         boolean actual = bungalow.hasGarage;
+        assertEquals(actual, expected);
+
     }
 
 }
