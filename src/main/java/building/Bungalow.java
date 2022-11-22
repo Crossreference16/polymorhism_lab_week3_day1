@@ -1,6 +1,8 @@
 package building;
 
-public class Bungalow extends Building {
+import interfaces.ISecurity;
+
+public class Bungalow extends Building implements ISecurity {
     protected boolean petsAllowed;
     protected int occupants;
     protected boolean hasGarage;
@@ -12,6 +14,9 @@ public class Bungalow extends Building {
         this.hasGarage = hasGarage;
     }
 
+    public String alarm(int intruders){
+        return "There are " + intruders + " intruders on the premises. 999 has been called and all " + this.numberOfRooms + "have been locked electronically.";
+    }
 
     //Getters and Setters:
     // public boolean isPetsAllowed(){

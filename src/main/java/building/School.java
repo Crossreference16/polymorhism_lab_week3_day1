@@ -1,6 +1,8 @@
 package building;
 
-public class School extends Building {
+import interfaces.ISecurity;
+
+public class School extends Building implements ISecurity{
     protected String typeOfSchool;
     protected int numberOfPupils;
     protected boolean hasSixthForm;
@@ -14,6 +16,9 @@ public class School extends Building {
 
     }
 
+    public String alarm(int intruders){
+        return "There are " + intruders + " intruders on the premises. 999 has been called and all " + this.numberOfRooms + "have been locked electronically.";
+    } //implementation of ISecurity interface.
     public String announcement(int numberOfPupils) {
         return "This is the morning announcement. School has been cancelled tomorrow for all " + numberOfPupils + " students.";
     } //Method overload part-1.
