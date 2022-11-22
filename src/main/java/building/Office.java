@@ -1,6 +1,8 @@
 package building;
 
-public class Office extends Building {
+import interfaces.ISecurity;
+
+public class Office extends Building implements ISecurity{
 
     protected String companyName;
     protected int rentPerMonth;
@@ -12,6 +14,10 @@ public class Office extends Building {
         this.rentPerMonth = rentPerMonth;
         this.numberOfEmployees = numberOfEmployees;
 
+    }
+
+    public String alarm(int intruders){
+        return "There are " + intruders + " intruders on the premises. 999 has been called and all " + this.numberOfRooms + "have been locked electronically.";
     }
 
     //Getters and Setters:

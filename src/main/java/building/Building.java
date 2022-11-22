@@ -1,5 +1,9 @@
 package building;
 
+import interfaces.ISecurity;
+
+import java.util.List;
+
 public abstract class Building {
 
     protected int numberOfRooms;
@@ -7,8 +11,7 @@ public abstract class Building {
     protected boolean centralHeating;
     protected int numberOfFloors;
 
-
-
+    private List <ISecurity> alarmSystems;
 
     public Building(int numberOfRooms, int dateOfConstruction, boolean centralHeating, int numberOfFloors){
         this.numberOfRooms = numberOfRooms;
@@ -17,7 +20,6 @@ public abstract class Building {
         this.numberOfFloors = numberOfFloors;
 
     }
-
 
 
 

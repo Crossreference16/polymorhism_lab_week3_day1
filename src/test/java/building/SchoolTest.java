@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
+
 public class SchoolTest {
 
     private School school;
@@ -38,7 +39,5 @@ public class SchoolTest {
         boolean actual = school.hasSixthForm;
         assertEquals(actual, expected);
     }
-
-
 
 }

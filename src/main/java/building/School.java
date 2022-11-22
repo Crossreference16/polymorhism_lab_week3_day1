@@ -16,6 +16,7 @@ public class School extends Building implements ISecurity{
 
     }
 
+
     public String alarm(int intruders){
         return "There are " + intruders + " intruders on the premises. 999 has been called and all " + this.numberOfRooms + "have been locked electronically.";
     } //implementation of ISecurity interface.
@@ -23,10 +24,12 @@ public class School extends Building implements ISecurity{
         return "This is the morning announcement. School has been cancelled tomorrow for all " + numberOfPupils + " students.";
     } //Method overload part-1.
 
-
     public String announcement(String lesson3, String lesson4) {
         return "This is the lunchtime announcement. " + lesson3 + " and " + lesson4 + " today have also been cancelled for Class 10A.";
     }  //Method overload part-2.
+
+
+
 
 
     //Getters and Setters:
